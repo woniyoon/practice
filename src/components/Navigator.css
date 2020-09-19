@@ -1,16 +1,19 @@
-.navMenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+.sideBar {
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 10vh;
-    margin: 0;
+    width: 15vw;
+    height: 100%;
     position: fixed;
+    margin: 0;
     padding-inline-start: 0px;
     background-color: rgb(235, 210, 244);
+}
+
+.navMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 300px 0;
     border: 1px solid red;
 }
 
@@ -24,4 +27,10 @@
 
 a {
     text-decoration: none;
+}
+
+img {
+    border: 1px solid green;
+    max-width: 100px;
+    max-height: 100px;
 }
