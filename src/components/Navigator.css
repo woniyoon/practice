@@ -1,0 +1,27 @@
+.navMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    margin: 0;
+    position: fixed;
+    padding-inline-start: 0px;
+    background-color: rgb(235, 210, 244);
+    border: 1px solid red;
+}
+
+.navMenu li {
+    display: inline-block;
+    margin: 0 10px;
+    list-style-type: none;
+    font-weight: bold;
+    border: 1px solid blue;
+}
+
+a {
+    text-decoration: none;
+}
