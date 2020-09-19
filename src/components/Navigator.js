@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navigator.css';
+import profile from '../images/profile.jpg';
 
 function Navigator(){
     return (
         <aside className="sideBar">
-            <img src="" alt="img" />
+            <img src={profile} alt="img" />
             <ul className="navMenu">
                 <li>
                     <Link to="/">MAIN</Link>
