@@ -1,0 +1,8 @@
+.workContainer {
+    width: 60vw;
+    margin: 100px auto;
+    background-color: lavender;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+

@@ -1,0 +1,7 @@
+.projectPcs {
+    background-color: wheat;
+    display: inline-block;
+    width: 200px;
+    border: 1px solid silver;
+    margin: 0 auto;
+}
