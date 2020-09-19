@@ -1,0 +1,10 @@
+section {
+    height: auto;
+    margin-left: 15vw;
+    background-color: slategrey;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
