@@ -5,17 +5,19 @@ import sbWeb from '../images/sbWeb.png';
 import socdocLogo  from '../images/socdocLogoT.png';
 
 const worksDescription = [
-    {title: "스타벅스 웹사이트",
+    {id: "sb001",
+    title: "스타벅스 웹사이트",
     period: "2020-06",
-    mainImg: {sbWeb}},
-    {title: "속닥속닥",
+    projectThumnail: sbWeb},
+    {id: "sc002",
+    title: "속닥속닥",
     period: "2020-08",
-    mainImg: {socdocLogo}},
+    projectThumnail: socdocLogo},
 ];
 
 function getProject(){
     return worksDescription.map((work)=>{
-        return (<Project work={work} />)
+        return (<Project key={work.id} work={work} />)
     });
 }
 
