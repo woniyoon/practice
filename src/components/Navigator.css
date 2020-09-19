@@ -37,7 +37,11 @@ img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    animation:spin 80s linear infinite;
 }
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 
 @media screen and (max-width: 1030px) {
     img {
