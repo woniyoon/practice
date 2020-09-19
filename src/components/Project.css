@@ -1,7 +1,10 @@
 .projectPcs {
-    background-color: wheat;
+    /* background-color: rgb(237, 237, 237); */
+    background-size: contain;
+    background-repeat: no-repeat;
     display: inline-block;
-    width: 200px;
+    width: 400px;
+    height: 200px;
     border: 1px solid silver;
     margin: 0 auto;
 }
