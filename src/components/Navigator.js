@@ -6,7 +6,7 @@ import profile from '../images/profile.jpg';
 function Navigator(){
     return (
         <aside className="sideBar">
-            <img src={profile} alt="img" />
+            <img className="sideImg" src={profile} alt="img" />
             <ul className="navMenu">
                 <li>
                     <Link to="/">MAIN</Link>
