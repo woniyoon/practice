@@ -28,3 +28,27 @@
         width: 400px;
     }
 }
+
+.descriptionBack {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptionBack p {
+    color: white;
+}
+
+.projectPcs:hover {
+    opacity: 0.9;
+}
+
+.descriptionBack:hover {
+    background-color: rgb(62, 62, 62);
+    opacity: 0.9;
+    transition: opacity 0.5s;
+}

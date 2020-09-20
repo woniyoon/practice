@@ -2,23 +2,36 @@ import React from 'react';
 import './Project.css';
 
 class Project extends React.Component {
+    // state = {
+    //     isSelected: false,
+    // };
 
-    test = () => {
-        console.log("요호~ ");
-    }
+    // handleHover = () => {
+    //     console.log("??");
+    //     this.setState(prev => ({
+    //         isSelected: !prev.isSelected,
+    //     }));
+    // }
 
     render(){
         const work = this.props.work;
+        // const { isSelected } = this.state;
 
         var divStyle = {
             backgroundImage: "url(" + work.projectThumnail + ")"
         }
 
         return(
-            <div className="projectPcs" style={divStyle} onMouseEnter={this.test} >
+            <div className="projectPcs" style={divStyle}  >
+                {/* <div className={`descriptionBack ${isSelected ? "transparentBack" : ""}`}  */}
+                <div className="descriptionBack" 
+                    // onMouseEnter={this.handleHover}
+                    // onMouseLeave={this.handleHover}
+                >
+                    <p className="projectTitle">{work.title}</p>
+                    <p className="projectPeriod">{work.period}</p>
+                </div>
                 {/* <img className="projectThumnail" src={work.projectThumnail}/> */}
-                <p className="projectTitle">{work.title}</p>
-                <p className="projectPeriod">{work.period}</p>
             </div>
         );
     }
