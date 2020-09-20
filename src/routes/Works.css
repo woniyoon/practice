@@ -1,12 +1,27 @@
 .workContainer {
-    width: 60vw;
+    width: auto;
     margin: 100px auto;
     background-color: lavender;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5em;
+    grid-row-gap: 5em;
 }
 
-@media screen and (max-width: 1030px) {
+/* @media screen and (min-width: 1030px) {
+    .workContainer {
+        width: 70vw;
+    }
+} */
+
+@media screen and (min-width: 660px) and (max-width: 1030px) {
+    .workContainer {
+        grid-template-columns: auto;
+        border: 4px solid salmon;
+    }
+}
+
+@media screen and (max-width: 660px) {
     .workContainer {
         grid-template-columns: auto;
     }

@@ -3,7 +3,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
-    width: 400px;
+    width: 70vw;
     height: 250px;
     background-size: auto 100%;
     background-position: center;
@@ -11,10 +11,20 @@
     /* margin: 0 auto; */
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (min-width: 1300px) {
     .projectPcs {
-        background-size: 60vw;
-        /* width: 60vw;
-        height: auto; */
+        width: 30vw;
+    }
+}
+
+@media screen and (min-width: 1030px) and (max-width: 1300px) {
+    .projectPcs {
+        width: 35vw;
+    }
+}
+
+@media screen and (min-width: 620px) and (max-width: 1030px) {
+    .projectPcs {
+        width: 400px;
     }
 }
