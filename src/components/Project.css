@@ -79,9 +79,9 @@
 
 .projectTitle, .projectPeriod {
     position: relative;
-    bottom: 25%;
+    bottom: -45%;
     opacity: 0.1;
-    transition: all 0.7s ease;
+    transition: all 0.5s ease-in-out;
 }
 
 @keyframes drawBorder {
@@ -92,15 +92,18 @@
         border-left: none;
     }
     25% {
-        /* border-top: 2px solid rgb(228, 228, 228); */
+        border-top: 2px solid rgb(228, 228, 228);
         border-right: 2px solid rgb(228, 228, 228);
         border-bottom: none;
         border-left: none;
     }
     50% {
+        border-top: 2px solid rgb(228, 228, 228);
+        border-right: 2px solid rgb(228, 228, 228);
         border-bottom: 2px solid rgb(228, 228, 228);
+        border-left: none;
     }
     100% {
-        border-left: 2px solid rgb(228, 228, 228);
+        border: 2px solid rgb(228, 228, 228);
     }
 }
