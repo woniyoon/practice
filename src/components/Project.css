@@ -4,7 +4,17 @@
     background-repeat: no-repeat;
     display: inline-block;
     width: 400px;
-    height: 200px;
+    height: 250px;
+    background-size: auto 100%;
+    background-position: center;
     border: 1px solid silver;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+}
+
+@media screen and (max-width: 1030px) {
+    .projectPcs {
+        background-size: 60vw;
+        /* width: 60vw;
+        height: auto; */
+    }
 }
