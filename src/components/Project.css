@@ -63,7 +63,12 @@
     /* top: -5px;
     bottom: -5px; */
     content: "";
-    transition: width, height 3s ease;
+    transition: width, height 0.7s ease;
+}
+
+.descriptionBack:hover .projectTitle, .descriptionBack:hover .projectPeriod {
+    bottom: -50%;
+    opacity: 1;
 }
 
 .descriptionBack:hover::after {
@@ -74,7 +79,9 @@
 
 .projectTitle, .projectPeriod {
     position: relative;
-    bottom: -50%;
+    bottom: 25%;
+    opacity: 0.1;
+    transition: all 0.7s ease;
 }
 
 @keyframes drawBorder {
