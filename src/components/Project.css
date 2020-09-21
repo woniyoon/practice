@@ -34,13 +34,10 @@
     height: 100%;
     opacity: 0;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.descriptionBack p {
-    color: white;
 }
 
 .projectPcs:hover {
@@ -54,56 +51,35 @@
 }
 
 .descriptionBack::after {
-    position: relative;
-    width: 0%;
-    height: 0%;
-    border: 2px solid rgb(228, 228, 228);
-    top: -16px;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    /* border: 2px solid rgb(228, 228, 228); */
+    top: 60%;
+    left: 30%;
     /* bottom: 10px; */
     /* top: -5px;
     bottom: -5px; */
     content: "";
-    transition: width, height 0.7s ease;
+    transition: width 0.7s ease;
 }
 
-.descriptionBack:hover .projectTitle, .descriptionBack:hover .projectPeriod {
-    bottom: -50%;
+.descriptionBack:hover .projectTitle {
+    top: 40%;
     opacity: 1;
+    visibility: visible;
 }
 
 .descriptionBack:hover::after {
-    width: 90%;
-    height: 95%;
-    animation: drawBorder 0.6s;
+    width: 40%;
 }
 
-.projectTitle, .projectPeriod {
-    position: relative;
-    bottom: -45%;
-    opacity: 0.1;
-    transition: all 0.5s ease-in-out;
+.projectTitle {
+    color: white;
+    position: absolute;
+    top: 10%;
+    opacity: 0;
+    transition: opacity 1s ease, top 0.8s ease-in-out;
 }
 
-@keyframes drawBorder {
-    0% {
-        border-top: 2px solid rgb(228, 228, 228);
-        border-right: none;
-        border-bottom: none;
-        border-left: none;
-    }
-    25% {
-        border-top: 2px solid rgb(228, 228, 228);
-        border-right: 2px solid rgb(228, 228, 228);
-        border-bottom: none;
-        border-left: none;
-    }
-    50% {
-        border-top: 2px solid rgb(228, 228, 228);
-        border-right: 2px solid rgb(228, 228, 228);
-        border-bottom: 2px solid rgb(228, 228, 228);
-        border-left: none;
-    }
-    100% {
-        border: 2px solid rgb(228, 228, 228);
-    }
-}
