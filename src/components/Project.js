@@ -28,8 +28,7 @@ class Project extends React.Component {
                     // onMouseEnter={this.handleHover}
                     // onMouseLeave={this.handleHover}
                 >
-                    <p className="projectTitle">{work.title}</p>
-                    <p className="projectPeriod">{work.period}</p>
+                    <p className="projectTitle" align="center">{work.title}<br/>{work.period}</p>
                 </div>
                 {/* <img className="projectThumnail" src={work.projectThumnail}/> */}
             </div>
