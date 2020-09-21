@@ -2,9 +2,9 @@ import React from 'react';
 import './Project.css';
 
 class Project extends React.Component {
-    // state = {
-    //     isSelected: false,
-    // };
+    state = {
+        isSelected: false,
+    };
 
     // handleHover = () => {
     //     console.log("??");
@@ -13,25 +13,40 @@ class Project extends React.Component {
     //     }));
     // }
 
+    clickProject(project){
+        console.log(project);
+        
+        this.setState(prev => ({
+            isSelected: !prev.isSelected,
+        }));
+        
+    }
+
     render(){
         const work = this.props.work;
-        // const { isSelected } = this.state;
+        const { isSelected } = this.state;
 
         var divStyle = {
             backgroundImage: "url(" + work.projectThumnail + ")"
         }
 
         return(
-            <div className="projectPcs" style={divStyle}  >
-                {/* <div className={`descriptionBack ${isSelected ? "transparentBack" : ""}`}  */}
-                <div className="descriptionBack" 
-                    // onMouseEnter={this.handleHover}
-                    // onMouseLeave={this.handleHover}
-                >
-                    <p className="projectTitle" align="center">{work.title}<br/>{work.period}</p>
+            <div>
+                <div className="projectPcs" style={divStyle} onClick={()=> this.clickProject(work)} >
+                    {/* <div className={`descriptionBack ${isSelected ? "transparentBack" : ""}`}  */}
+                    <div className="descriptionBack" 
+                        // onMouseEnter={this.handleHover}
+                        // onMouseLeave={this.handleHover}
+                    >
+                        <p className="projectTitle" align="center">{work.title}<br/>{work.period}</p>
+                    </div>
+                    {/* <img className="projectThumnail" src={work.projectThumnail}/> */}
                 </div>
-                {/* <img className="projectThumnail" src={work.projectThumnail}/> */}
+                <article className={`projectDetail ${isSelected ? "show" : ""}`} align="center">
+                    <p>프로젝트 디테일</p>
+                </article>
             </div>
+            
         );
     }
 }

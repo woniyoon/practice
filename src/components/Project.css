@@ -78,8 +78,23 @@
 .projectTitle {
     color: white;
     position: absolute;
-    top: 10%;
+    top: 20%;
     opacity: 0;
     transition: opacity 1s ease, top 0.8s ease-in-out;
 }
 
+.projectDetail {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60vw;
+    height: 40vh;
+    background-color: lightgoldenrodyellow;
+    z-index: 1000;
+    margin: -25% 0 0 -25%;
+}
+
+.show {
+    display: block;
+}
