@@ -1,4 +1,5 @@
 import React from 'react';
+import Modal from '../components/Modal';
 import './Project.css';
 
 class Project extends React.Component {
@@ -17,14 +18,20 @@ class Project extends React.Component {
         console.log(project);
         
         this.setState(prev => ({
-            isSelected: !prev.isSelected,
+            isSelected: true,
         }));
         
     }
 
+    closeModal(){
+        this.setState(prev => ({
+            isSelected: false,
+        }));
+    }
+
     render(){
         const work = this.props.work;
-        const { isSelected } = this.state;
+        // const { isSelected } = this.state;
 
         var divStyle = {
             backgroundImage: "url(" + work.projectThumnail + ")"
@@ -42,11 +49,11 @@ class Project extends React.Component {
                     </div>
                     {/* <img className="projectThumnail" src={work.projectThumnail}/> */}
                 </div>
-                <article className={`projectDetail ${isSelected ? "show" : ""}`} align="center">
+                {/* <article className={`projectDetail ${isSelected ? "show" : ""}`} align="center">
                     <p>프로젝트 디테일</p>
-                </article>
+                </article> */}
+                <Modal close={this.closeModal} />
             </div>
-            
         );
     }
 }
