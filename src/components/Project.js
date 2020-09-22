@@ -23,7 +23,7 @@ class Project extends React.Component {
         
     }
 
-    closeModal(){
+    closeModal = () => {
         this.setState(prev => ({
             isSelected: false,
         }));
@@ -31,7 +31,7 @@ class Project extends React.Component {
 
     render(){
         const work = this.props.work;
-        // const { isSelected } = this.state;
+        const { isSelected } = this.state;
 
         var divStyle = {
             backgroundImage: "url(" + work.projectThumnail + ")"
@@ -52,7 +52,10 @@ class Project extends React.Component {
                 {/* <article className={`projectDetail ${isSelected ? "show" : ""}`} align="center">
                     <p>프로젝트 디테일</p>
                 </article> */}
-                <Modal close={this.closeModal} />
+                {
+                    isSelected ?  <Modal close={this.closeModal} /> : null
+                }
+
             </div>
         );
     }
