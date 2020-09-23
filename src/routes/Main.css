@@ -1,6 +1,7 @@
-section {
-    height: auto;
-    margin-left: 15vw;
+.mainContainer {
+    flex: 1;
+    height: 100%;
+    /* margin: 100px; */
     background-color: slategrey;
 }
 
