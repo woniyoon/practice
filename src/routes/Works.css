@@ -1,7 +1,7 @@
 .workContainer {
     width: auto;
-    height: auto;
-    margin: 100px auto;
+    height: 80%;
+    margin: auto;
     background-color: lavender;
     display: grid;
     grid-template-columns: 1fr 1fr;
