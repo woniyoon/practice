@@ -1,8 +1,61 @@
 import React from 'react';
 import Project from '../components/Project';
 import './Works.css';
+import Modal from '../components/Modal';
 import sbWeb from '../images/sbWeb.png';
 import socdocLogo  from '../images/socdocLogoT.png';
+
+class Works extends React.Component {
+    state = {
+        isSelected: false,
+        work: null,
+    };
+
+    // handleHover = () => {
+    //     console.log("??");
+    //     this.setState(prev => ({
+    //         isSelected: !prev.isSelected,
+    //     }));
+    // }
+
+    clickProject(project){
+        console.log(project);
+        this.setState(prev => ({
+            isSelected: true,
+            work: project,
+        }));
+    }
+
+    closeModal = () => {
+        this.setState(prev => ({
+            isSelected: false,
+        }));
+    }
+
+    getProject = ()=>{
+    
+        return worksDescription.map((work)=>{
+            return (
+                <Project customClickEvent={this.clickProject.bind(this)} key={work.id} work={work} />
+                // {
+                //     isSelected ?  <Modal project={work} close={this.closeModal} /> : null
+                // }
+            )
+        });
+    }
+
+    render() {
+        const { isSelected, work } = this.state;
+
+        return (
+            <main className="workContainer">
+                {this.getProject()}
+                {isSelected ?  <Modal project={work} close={this.closeModal} /> : null}
+            </main>
+        );
+    }
+
+}
 
 const worksDescription = [
     {id: "sb001",
@@ -14,20 +67,5 @@ const worksDescription = [
     period: "2020-08",
     projectThumnail: socdocLogo},
 ];
-
-function getProject(){
-    return worksDescription.map((work)=>{
-        return (<Project key={work.id} work={work} />)
-    });
-}
-
-function Works(){
-
-    return (
-        <main className="workContainer">
-            {getProject()}
-        </main>
-    );
-}
 
 export default Works;
