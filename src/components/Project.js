@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from '../components/Modal';
+// import Modal from '../components/Modal';
 import './Project.css';
 
 class Project extends React.Component {
@@ -15,12 +15,9 @@ class Project extends React.Component {
     // }
 
     clickProject(project){
-        console.log(project);
-        
         this.setState(prev => ({
             isSelected: true,
         }));
-        
     }
 
     closeModal = () => {
@@ -31,7 +28,7 @@ class Project extends React.Component {
 
     render(){
         const work = this.props.work;
-        const { isSelected } = this.state;
+        // const { isSelected } = this.state;
 
         var divStyle = {
             backgroundImage: "url(" + work.projectThumnail + ")"
@@ -39,7 +36,7 @@ class Project extends React.Component {
 
         return(
             <div>
-                <div className="projectPcs" style={divStyle} onClick={()=> this.clickProject(work)} >
+                <div className="projectPcs" style={divStyle} onClick={()=> this.props.customClickEvent(this.props.work.id)} >
                     {/* <div className={`descriptionBack ${isSelected ? "transparentBack" : ""}`}  */}
                     <div className="descriptionBack" 
                         // onMouseEnter={this.handleHover}
@@ -52,10 +49,9 @@ class Project extends React.Component {
                 {/* <article className={`projectDetail ${isSelected ? "show" : ""}`} align="center">
                     <p>프로젝트 디테일</p>
                 </article> */}
-                {
-                    isSelected ?  <Modal close={this.closeModal} /> : null
-                }
-
+                {/* {
+                    isSelected ?  <Modal project={work} close={this.closeModal} /> : null
+                } */}
             </div>
         );
     }
