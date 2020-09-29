@@ -8,7 +8,7 @@ import socdocLogo  from '../images/socdocLogoT.png';
 class Works extends React.Component {
     state = {
         isSelected: false,
-        work: null,
+        projectId: null,
     };
 
     // handleHover = () => {
@@ -22,7 +22,7 @@ class Works extends React.Component {
         console.log(project);
         this.setState(prev => ({
             isSelected: true,
-            work: project,
+            projectId: project.id,
         }));
     }
 
@@ -45,12 +45,12 @@ class Works extends React.Component {
     }
 
     render() {
-        const { isSelected, work } = this.state;
+        const { isSelected, projectId } = this.state;
 
         return (
             <main className="workContainer">
                 {this.getProject()}
-                {isSelected ?  <Modal project={work} close={this.closeModal} /> : null}
+                {isSelected ?  <Modal projectId={projectId} close={this.closeModal} /> : null}
             </main>
         );
     }
