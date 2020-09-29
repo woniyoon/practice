@@ -18,11 +18,10 @@ class Works extends React.Component {
     //     }));
     // }
 
-    clickProject(project){
-        console.log(project);
+    clickProject(projectId){
         this.setState(prev => ({
             isSelected: true,
-            projectId: project.id,
+            projectId,
         }));
     }
 
