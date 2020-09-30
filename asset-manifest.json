@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8c7c21f5.chunk.css",
+    "main.js": "/portfolio/static/js/main.c7c98fbc.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c7c98fbc.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
+    "static/js/2.68f020a9.chunk.js": "/portfolio/static/js/2.68f020a9.chunk.js",
+    "static/js/2.68f020a9.chunk.js.map": "/portfolio/static/js/2.68f020a9.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.c0a23f10ee8dae470a7f076049e21c37.js": "/portfolio/precache-manifest.c0a23f10ee8dae470a7f076049e21c37.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.8c7c21f5.chunk.css.map": "/portfolio/static/css/main.8c7c21f5.chunk.css.map",
+    "static/js/2.68f020a9.chunk.js.LICENSE.txt": "/portfolio/static/js/2.68f020a9.chunk.js.LICENSE.txt",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.f230b5d9.jpg",
+    "static/media/sbArch.jpeg": "/portfolio/static/media/sbArch.2d689a81.jpeg",
+    "static/media/sbWeb.png": "/portfolio/static/media/sbWeb.3b856ae4.png",
+    "static/media/sdArch.jpeg": "/portfolio/static/media/sdArch.939567e5.jpeg",
+    "static/media/socdocLogoT.png": "/portfolio/static/media/socdocLogoT.df1b81a9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.209c2d7e.js",
+    "static/js/2.68f020a9.chunk.js",
+    "static/css/main.8c7c21f5.chunk.css",
+    "static/js/main.c7c98fbc.chunk.js"
+  ]
+}
