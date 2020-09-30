@@ -21,7 +21,6 @@ code {
   display: flex;
   flex-direction: row;
   width: auto;
-  border: 2px solid purple;
 }
 
 @media screen and (max-width: 1030px) {

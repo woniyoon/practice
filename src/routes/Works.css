@@ -2,7 +2,7 @@
     width: auto;
     height: 80%;
     margin: auto;
-    background-color: lavender;
+    /* background-color: lavender; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5em;
@@ -18,7 +18,6 @@
 @media screen and (min-width: 660px) and (max-width: 1030px) {
     .workContainer {
         grid-template-columns: auto;
-        border: 4px solid salmon;
     }
 }
 
