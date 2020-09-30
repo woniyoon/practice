@@ -1,27 +1,34 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.eb75bdd3.chunk.css",
-    "main.js": "/portfolio/static/js/main.c7c98fbc.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c7c98fbc.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.fc76fb32.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.fc76fb32.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/js/2.68f020a9.chunk.js": "/portfolio/static/js/2.68f020a9.chunk.js",
     "static/js/2.68f020a9.chunk.js.map": "/portfolio/static/js/2.68f020a9.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.73991bb159520f9bd75cf8c4024202ea.js": "/portfolio/precache-manifest.73991bb159520f9bd75cf8c4024202ea.js",
+    "precache-manifest.8d28acfe634e6ff4f0ec27d909d778bf.js": "/portfolio/precache-manifest.8d28acfe634e6ff4f0ec27d909d778bf.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.eb75bdd3.chunk.css.map": "/portfolio/static/css/main.eb75bdd3.chunk.css.map",
     "static/js/2.68f020a9.chunk.js.LICENSE.txt": "/portfolio/static/js/2.68f020a9.chunk.js.LICENSE.txt",
     "static/media/profile.jpg": "/portfolio/static/media/profile.f230b5d9.jpg",
     "static/media/sbArch.jpeg": "/portfolio/static/media/sbArch.2d689a81.jpeg",
+    "static/media/sbScreenshot1.png": "/portfolio/static/media/sbScreenshot1.900d41d4.png",
+    "static/media/sbScreenshot2.png": "/portfolio/static/media/sbScreenshot2.811acf39.png",
+    "static/media/sbScreenshot3.png": "/portfolio/static/media/sbScreenshot3.7cd00b2b.png",
     "static/media/sbWeb.png": "/portfolio/static/media/sbWeb.3b856ae4.png",
     "static/media/sdArch.jpeg": "/portfolio/static/media/sdArch.939567e5.jpeg",
+    "static/media/sdScreen1.png": "/portfolio/static/media/sdScreen1.b5c39636.png",
+    "static/media/sdScreen2.png": "/portfolio/static/media/sdScreen2.474654d8.png",
+    "static/media/sdScreen3.png": "/portfolio/static/media/sdScreen3.d0d8bd36.png",
+    "static/media/sdScreen4.png": "/portfolio/static/media/sdScreen4.77b2c3ce.png",
     "static/media/socdocLogoT.png": "/portfolio/static/media/socdocLogoT.df1b81a9.png"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
     "static/js/2.68f020a9.chunk.js",
     "static/css/main.eb75bdd3.chunk.css",
-    "static/js/main.c7c98fbc.chunk.js"
+    "static/js/main.fc76fb32.chunk.js"
   ]
 }
