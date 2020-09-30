@@ -2,6 +2,13 @@ import React, {useEffect} from "react";
 import "./Modal.css";
 import sbArch from "../images/sbArch.jpeg"
 import sdArch from "../images/sdArch.jpeg"
+import { sbScreen1, 
+    sbScreen2, 
+    sbScreen3, 
+    sdScreen1, 
+    sdScreen2, 
+    sdScreen3, 
+    sdScreen4 } from "../images/index";
 
 function Modal({ close, projectId }){
 
@@ -28,9 +35,11 @@ function Modal({ close, projectId }){
                 <p onClick={close} align="right"><strong>X</strong></p><br/>
                 <p><strong>팀명 : </strong>{project.teamName}</p><br/>
                 <p><strong>소개 : </strong>{project.motif}</p><br/>
-                <p><strong>소개 : </strong>{project.motif}</p><br/>
-                <p><strong>소개 : </strong>{project.motif}</p><br/>
                 <strong>스택아키텍처</strong><br/><img src={project.architecture} width="90%"/>
+                <p><strong>스크린샷</strong></p><br/>
+                { project.screenShots.map((img)=>{ 
+                    return <img src={img} width="80%" />}) 
+                }
             </main>
         </div>
     );
@@ -41,6 +50,7 @@ const detail = {
         "teamName": "NOT NULL",
         "motif": "개발자 워너비 5명이 힘을 모아 FE부터 BE까지! 🏃‍♀️🏃‍♀️🏃‍♀️🏃‍♀️🏃‍♀️ 기능도 중요하지만 디자인도 놓치고 싶지 않은 NOT NULL팀. 즐겨마시는 커피☕️, 음료🍹와 관련된 웹사이트를 개발하기로 정하고, 여러 프랜차이즈 카페 사이트를 조사하다가 한국 스타벅스 사이트의 아름다운 디자인과 북미 스타벅스의 온라인 주문 기능이 합쳐져 심미성과 기능성 모두 겸비한 스타벅스 사이트를 만들어보기로 결심!",
         "architecture": sbArch,
+        "screenShots": [sbScreen1, sbScreen2, sbScreen3],
     },
     "sc002": {
         "teamName": "시너지",
