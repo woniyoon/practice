@@ -1,18 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Modal.css";
 import sbArch from "../images/sbArch.jpeg"
 import sdArch from "../images/sdArch.jpeg"
 
 function Modal({ close, projectId }){
 
-    // useEffect(() => {
-    //     document.body.style.cssText = `position: fixed; top: -${window.scrollY}px;`
-    //     return () => {
-    //         const scrollY = document.body.style.top
-    //         document.body.style.cssText = `position: ""; top: "";`
-    //         window.scrollTo(0, parseInt(scrollY || '0') * -1)
-    //     }
-    // }, [])
+    useEffect(() => {
+        document.body.style.cssText = `position: fixed; top: -${window.scrollY}px;`
+        return () => {
+            const scrollY = document.body.style.top
+            document.body.style.cssText = `position: ""; top: "";`
+            window.scrollTo(0, parseInt(scrollY || '0') * -1)
+        }
+    }, [])
 
     // id
     // period
@@ -27,6 +27,8 @@ function Modal({ close, projectId }){
             <main className="modalContent">
                 <p onClick={close} align="right"><strong>X</strong></p><br/>
                 <p><strong>팀명 : </strong>{project.teamName}</p><br/>
+                <p><strong>소개 : </strong>{project.motif}</p><br/>
+                <p><strong>소개 : </strong>{project.motif}</p><br/>
                 <p><strong>소개 : </strong>{project.motif}</p><br/>
                 <strong>스택아키텍처</strong><br/><img src={project.architecture} width="90%"/>
             </main>
